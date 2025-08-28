@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Site Under Construction</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaughran Lab — Under Construction</title>
+  <meta name="description" content="The Gaughran Lab is currently getting up and running in UC Berkeley's Department of Integrative Biology." />
   <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
+    :root {
+      --text-color: #111;
+      --muted-color: #666;
+      --max-width: 880px;
+    }
+    /* Page reset & layout */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #fff; /* keep the whole page white to match your image */
+      color: var(--text-color);
+      font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    }
+    .wrap {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: var(--max-width);
       text-align: center;
-      padding: 50px;
     }
     h1 {
-      font-size: 2.5em;
-      color: #333;
+      font-size: clamp(28px, 3.2vw + 12px, 44px);
+      margin: 0 0 12px 0;
+      letter-spacing: 0.2px;
     }
     p {
-      font-size: 1.2em;
-      color: #666;
+      font-size: clamp(16px, 1.2vw + 10px, 20px);
+      line-height: 1.6;
+      color: var(--muted-color);
+      margin: 0 0 20px 0;
     }
     img {
-      max-width: 500px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: var(--max-width);
+      margin: 16px auto 0 auto;
+      /* no border, no shadow, no radius — so it visually merges with the white page */
+    }
+    .subtle {
+      font-size: 14px;
+      color: #999;
+      margin-top: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>🚧 Site Under Construction 🚧</h1>
-  <p>Please check back soon!</p>
-  <img src="Monk_seals_cartoons.jpg" alt="Under Construction">
+  <main class="wrap">
+    <div class="card" role="region" aria-label="Site status">
+      <h1>🚧 Site Under Construction</h1>
+      <p>
+        The Gaughran Lab is currently getting up and running in UC Berkeley’s Department of Integrative Biology.
+        Please check back soon to read about ongoing research and future opportunities!
+      </p>
+      <!-- Update the filename below if your image is named differently -->
+      <img src="Monk_seals_cartoon.jpg" alt="Gaughran Lab — under construction" />
+      <div class="subtle">© <span id="y"></span> Gaughran Lab</div>
+    </div>
+  </main>
+  <script>
+    // auto-update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
