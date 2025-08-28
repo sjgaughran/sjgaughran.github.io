@@ -4,20 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gaughran Lab — Under Construction</title>
-  <meta name="description" content="The Gaughran Lab is currently getting up and running in UC Berkeley's Department of Integrative Biology." />
+  <meta name="description" content="The Gaughran Lab is starting in UC Berkeley’s Department of Integrative Biology in early 2025." />
   <style>
     :root {
       --text-color: #111;
-      --muted-color: #666;
+      --muted-color: #555;
       --max-width: 880px;
     }
-    /* Page reset & layout */
     html, body {
       height: 100%;
       margin: 0;
-      background: #fff; /* keep the whole page white to match your image */
+      background: #fff; /* white background to match the image */
       color: var(--text-color);
-      font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     }
     .wrap {
       min-height: 100dvh;
@@ -41,13 +40,21 @@
       color: var(--muted-color);
       margin: 0 0 20px 0;
     }
+    a {
+      color: #003262; /* UC Berkeley blue */
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #FDB515; /* Berkeley gold on hover */
+    }
     img {
       display: block;
       width: 100%;
       height: auto;
-      max-width: var(--max-width);
+      max-width: 66%; /* about 2/3 size */
       margin: 16px auto 0 auto;
-      /* no border, no shadow, no radius — so it visually merges with the white page */
     }
     .subtle {
       font-size: 14px;
@@ -61,11 +68,14 @@
     <div class="card" role="region" aria-label="Site status">
       <h1>🚧 Site Under Construction</h1>
       <p>
-        The Gaughran Lab is currently getting up and running in UC Berkeley’s Department of Integrative Biology.
-        Please check back soon to read about ongoing research and future opportunities!
+        The Gaughran Lab is starting in 
+        <a href="https://ib.berkeley.edu/" target="_blank" rel="noopener noreferrer">
+          UC Berkeley’s Department of Integrative Biology
+        </a> 
+        in early 2025. This site will be updated shortly with research projects, lab members, and publications. 
+        In the meantime, please reach out to me at <strong>sjgaughran[at]berkeley[dot]edu</strong> to find out about future research opportunities!
       </p>
-      <!-- Update the filename below if your image is named differently -->
-      <img src="Monk_seals_cartoons.jpg" alt="Gaughran Lab — under construction" />
+      <img src="under_construction.jpg" alt="Gaughran Lab — under construction" />
       <div class="subtle">© <span id="y"></span> Gaughran Lab</div>
     </div>
   </main>
