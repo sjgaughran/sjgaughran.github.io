@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaughran Lab | Home (Preview)</title>
+  <meta name="description" content="Preview version of the Gaughran Lab academic website." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Gaughran Lab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" title="CV placeholder">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-split">
+      <div class="text-box">
+        <h1>Welcome to the Gaughran Lab</h1>
+        <p class="muted">
+          We study biodiversity, evolution, and conservation through integrative approaches that combine fieldwork,
+          museum collections, and genomic data. This preview site is a private draft of a full multi-page lab website.
+        </p>
+        <p>
+          <strong>Note:</strong> The public homepage remains under construction while this draft is developed.
+        </p>
+      </div>
+      <div class="side-image">
+        <img src="../monk_seal_cartoon.jpg" alt="Monk seal cartoon" />
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Gaughran Lab · Private draft preview</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
