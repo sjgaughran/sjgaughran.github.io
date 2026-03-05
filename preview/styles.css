@@ -131,6 +131,34 @@ footer {
   font-size: 0.92rem;
 }
 
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.text-box {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+  background: #fff;
+}
+
+.side-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-image img {
+  width: min(300px, 100%);
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
 @media (max-width: 850px) {
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -138,4 +166,5 @@ footer {
 @media (max-width: 620px) {
   .header-inner { justify-content: center; }
   .grid-3 { grid-template-columns: 1fr; }
+  .hero-split { grid-template-columns: 1fr; }
 }
