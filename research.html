@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaughran Lab | Research</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page research-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Gaughran Lab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="publications.html">Publications</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container research-main">
+    <header class="research-heading">
+      <h1>Research</h1>
+      <p class="muted">Our lab uses an integrative framework to study the origins and maintenance of adaptive and deleterious variation. We connect evolutionary history, population structure, and ecological context to ask how species diversify, persist, and respond to environmental change. To achieve this, we develop molecular and computational tools, apply a comparative framework, and collaborate with field-based researchers to leverage long-term datasets.</p>
+    </header>
+
+    <section class="research-section" aria-labelledby="deleterious-variation">
+      <h2 id="deleterious-variation">The evolution of deleterious variation</h2>
+      <p class="research-question"><em>How do harmful mutations arise, persist, and influence the evolution of natural populations?</em></p>
+      <p>We investigate how mutation, natural selection, genetic drift, and demographic history shape deleterious genetic variation. By combining functional evolutionary genomics, pedigree estimation, and temporal sampling, we connect patterns in genomes to the processes that produce them. A central question is why populations differ in their burden of deleterious variation—and what those differences mean for their persistence.</p>
+    </section>
+    <section class="research-section" aria-labelledby="marine-mammals">
+      <h2 id="marine-mammals">Molecular adaptations in marine mammals</h2>
+      <p class="research-question"><em>What molecular changes underlie the remarkable adaptations we see in marine mammals?</em></p>
+      <p>Marine mammals have evolved astounding solutions to life in the ocean, including the ability to perform deep dives, tolerate hypoxia, retain body heat, and fast for prolonged periods of time. We study the molecular and cellular changes underlying these adaptations, with a particular focus on deep-diving pinnipeds and cetaceans. Comparative and population genomic approaches allow us to investigate how natural selection shapes genes involved in physiology, immunity, and metabolism, and how different lineages converge on similar evolutionary solutions. Cell culture experiments and protein modelling further allow us to explore the functional consequences of those genetic changes.</p>
+    </section>
+    <section class="research-section" aria-labelledby="conservation-genomics">
+      <h2 id="conservation-genomics">Evolutionary conservation genomics</h2>
+      <p class="research-question"><em>How can we apply new genomic and machine learning tools to help save endangered species?</em></p>
+      <p>Conservation genetics has made substantial progress since its inception several decades ago. Only now, though, can the combination of population-scale whole genome sequencing and rapidly advancing computational methods allow the field to realize its full potential. We use genomic data from contemporary populations and museum specimens to reconstruct changes in population size, connectivity, and genetic variation through time. We follow this with simulations that project how that variation could affect the future survival of species. We work closely with conservation managers of the species we study to translate our evolutionary genomics work into applied conservation action.</p>
+    </section>
+    <section class="research-section" aria-labelledby="systematics">
+      <h2 id="systematics">Species delimitation and systematics</h2>
+      <p class="research-question"><em>What can evolutionary genomics tell us about divergence, diversification, and delineation?</em></p>
+      <p>Understanding the <em>what</em>, <em>where</em>, and <em>how</em> of species boundaries has been a central tenet of evolutionary biology since Darwin's voyage on the <em>Beagle</em>. While there is broad disagreement about how to define a species, we believe that genetics plays an innate and central role in any understanding of speciation. We use genomic data and statistical models to investigate relationships among populations and species, particularly in groups with recent divergence or histories of hybridization. By incorporating whole genome sequencing, museum specimens, and coalescent modelling, we attempt to address questions of species delimitation in threatened and endangered taxa.</p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Gaughran Lab</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

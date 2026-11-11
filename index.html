@@ -3,85 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gaughran Lab — Under Construction</title>
-  <meta name="description" content="The Gaughran Lab is starting in UC Berkeley’s Department of Integrative Biology in early 2025." />
-  <style>
-    :root {
-      --text-color: #111;
-      --muted-color: #555;
-      --max-width: 880px;
-    }
-    html, body {
-      height: 100%;
-      margin: 0;
-      background: #fff; /* white background to match the image */
-      color: var(--text-color);
-      font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    }
-    .wrap {
-      min-height: 100dvh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-    .card {
-      width: 100%;
-      max-width: var(--max-width);
-      text-align: center;
-    }
-    h1 {
-      font-size: clamp(28px, 3.2vw + 12px, 44px);
-      margin: 0 0 12px 0;
-      letter-spacing: 0.2px;
-    }
-    p {
-      font-size: clamp(16px, 1.2vw + 10px, 20px);
-      line-height: 1.6;
-      color: var(--muted-color);
-      margin: 0 0 20px 0;
-    }
-    a {
-      color: #003262; /* UC Berkeley blue */
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #FDB515; /* Berkeley gold on hover */
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-width: 66%; /* about 2/3 size */
-      margin: 16px auto 0 auto;
-    }
-    .subtle {
-      font-size: 14px;
-      color: #999;
-      margin-top: 14px;
-    }
-  </style>
+  <title>Gaughran Lab | Home</title>
+  <meta name="description" content="The Gaughran Lab at UC Berkeley studies adaptive and deleterious variation through evolutionary genomics, experiments, and natural history collections." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <main class="wrap">
-    <div class="card" role="region" aria-label="Site status">
-      <h1>🚧 Site Under Construction 🚧</h1>
-      <p>
-        The Gaughran Lab is currently getting up and running in 
-        <a href="https://ib.berkeley.edu/" target="_blank" rel="noopener noreferrer">
-          UC Berkeley’s Department of Integrative Biology.
-        </a> This site will be updated shortly with research projects, lab members, and publications. 
-        In the meantime, please reach out to me at <strong>sjgaughran[at]berkeley[dot]edu</strong> to find out about future research opportunities and check out my <a href="https://scholar.google.com/citations?user=o4KP7G0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google scholar</a> and <a href="https://github.com/sjgaughran?tab=repositories" target="_blank" rel="noopener noreferrer">github</a> pages.
-      </p>
-      <img src="monk_seal_cartoon.jpg" alt="Gaughran Lab — under construction" />
-      <div class="subtle">© <span id="y"></span> Gaughran Lab</div>
+<body class="home-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Gaughran Lab</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="publications.html">Publications</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container home-main">
+    <section class="home-intro" aria-labelledby="home-heading">
+      <div class="home-copy">
+        <h1 id="home-heading">Understanding biological change, past and present.</h1>
+        <p class="muted">
+          At the Gaughran Lab, we study how evolutionary forces shape adaptive and deleterious variation, and how that knowledge can inform conservation. We combine genomic data, cell culture experiments, long-term observational data, and museum collections to investigate how genetic variation arises, how populations change through time, and how species diversify.
+        </p>
+        <p>
+          We are based in the <a href="https://ib.berkeley.edu/">Department of Integrative Biology</a> at UC Berkeley.
+        </p>
+      </div>
+      </section>
+    <div class="home-illustration">
+        <img src="monk_seal_cartoon.jpg" alt="Monk seal cartoon" />
     </div>
   </main>
-  <script>
-    // auto-update year
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+
+  <footer>© <span id="year"></span> Gaughran Lab</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 
