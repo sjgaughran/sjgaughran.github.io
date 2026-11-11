@@ -7,7 +7,7 @@
   <meta name="description" content="Preview version of the Gaughran Lab academic website." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home-page">
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">Gaughran Lab</div>
@@ -24,10 +24,10 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero hero-split">
-      <div class="text-box">
-        <h1>Understanding biological change, past and present</h1>
+  <main class="container home-main">
+    <section class="home-intro" aria-labelledby="home-heading">
+      <div class="home-copy">
+        <h1 id="home-heading">Understanding biological change, past and present</h1>
         <p class="muted">
           At the Gaughran Lab, we study how evolutionary forces shape adaptive and deleterious variation, and how that knowledge can inform conservation. We combine genomic data, cell culture experiments, long-term observational data, and museum collections to investigate how genetic variation arises, how populations change through time, and how species diversify.
         </p>
@@ -35,10 +35,10 @@
           We are based in the Department of Integrative Biology at UC Berkeley.
         </p>
       </div>
-      <div class="side-image">
+      </section>
+    <div class="home-illustration">
         <img src="../monk_seal_cartoon.jpg" alt="Monk seal cartoon" />
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer>© <span id="year"></span> Gaughran Lab · Private draft preview</footer>
