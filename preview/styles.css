@@ -248,3 +248,10 @@ footer {
 .people-list { list-style: none; margin: 0; padding: 0; }
 .people-list li { padding: 5px 0; line-height: 1.7; }
 .people-years { color: var(--muted); }
+
+.mascot-profile { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.mascot-photo { display: block; width: 100%; height: auto; }
+@media (max-width: 620px) {
+  .mascot-profile { grid-template-columns: 1fr; gap: 20px; }
+  .mascot-photo { max-width: 280px; }
+}
