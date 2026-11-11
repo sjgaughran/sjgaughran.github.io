@@ -164,10 +164,10 @@ footer {
   max-width: 800px;
   margin-bottom: 28px;
   color: #18354a;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.2rem, 4.8vw, 3.5rem);
-  font-weight: 400;
-  line-height: 1.14;
+  font-family: inherit;
+  font-size: clamp(1.9rem, 3.8vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
@@ -186,7 +186,7 @@ footer {
 
 .home-illustration {
   margin: clamp(32px, 5vw, 60px) auto 0;
-  max-width: 600px;
+  max-width: 360px;
 }
 
 .home-illustration img {
