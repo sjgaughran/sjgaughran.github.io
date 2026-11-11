@@ -209,3 +209,18 @@ footer {
   .grid-3 { grid-template-columns: 1fr; }
   .home-main { padding-left: 24px; padding-right: 24px; }
 }
+
+/* A readable bibliography with year headings and open spacing. */
+.home-copy p a { text-decoration: underline; text-underline-offset: 3px; }
+.publications-main { max-width: 860px; padding-top: 52px; }
+.publications-heading { margin-bottom: 48px; }
+.publications-heading h1 { color: #18354a; font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 500; }
+.publication-year { margin: 0 0 40px; }
+.publication-year h2 { color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.publication-list { list-style: none; padding: 0; margin: 0; }
+.publication-list li { padding: 16px 0; }
+.publication-list h3 { font-size: 1.1rem; line-height: 1.5; margin: 0 0 7px; }
+.publication-list p { margin: 4px 0; overflow-wrap: anywhere; }
+.publication-authors { font-size: 0.95rem; color: var(--muted); }
+.publication-venue { font-size: 0.9rem; color: var(--muted); }
+.publication-type { display: inline-block; margin-left: 8px; color: var(--accent); font-size: 0.8rem; font-weight: 600; }

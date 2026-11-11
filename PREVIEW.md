@@ -8,7 +8,6 @@ A private draft of the full multipage lab website is in `preview/`:
 - `preview/research.html`
 - `preview/team.html`
 - `preview/publications.html`
-- `preview/contact.html`
 
 ## How to preview locally
 
