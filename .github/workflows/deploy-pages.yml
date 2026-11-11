@@ -1,0 +1,42 @@
+name: Deploy lab website
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: lab-website-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v6
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare static website
+        run: |
+          mkdir -p _site
+          cp index.html research.html team.html publications.html styles.css monk_seal_cartoon.jpg publications-data.json _site/
+          cp -R assets _site/assets
+          touch _site/.nojekyll
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
+
