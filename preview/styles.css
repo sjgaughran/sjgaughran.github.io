@@ -255,3 +255,11 @@ footer {
   .mascot-profile { grid-template-columns: 1fr; gap: 20px; }
   .mascot-photo { max-width: 280px; }
 }
+
+.pi-photo { float: left; width: 280px; max-width: 100%; height: auto; margin: 0 28px 18px 0; }
+.pi-profile::after { content: ""; display: block; clear: both; }
+.pi-profile #pi-contact { clear: both; padding-top: 8px; }
+@media (max-width: 620px) {
+  .pi-photo { float: none; width: 300px; margin: 0 0 24px; }
+}
+
