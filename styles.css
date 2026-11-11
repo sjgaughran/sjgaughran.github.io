@@ -179,8 +179,7 @@ footer {
 }
 
 .home-copy p:last-child {
-  color: var(--accent);
-  font-size: 1rem;
+  color: var(--muted);
   margin-bottom: 0;
 }
 
@@ -249,11 +248,11 @@ footer {
 .people-list li { padding: 5px 0; line-height: 1.7; }
 .people-years { color: var(--muted); }
 
-.mascot-profile { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.mascot-profile { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 28px; align-items: start; }
 .mascot-photo { display: block; width: 100%; height: auto; }
-@media (max-width: 620px) {
+@media (max-width: 700px) {
   .mascot-profile { grid-template-columns: 1fr; gap: 20px; }
-  .mascot-photo { max-width: 280px; }
+  .mascot-photo { max-width: 360px; }
 }
 
 .pi-intro { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 28px; align-items: stretch; margin-bottom: 18px; }
@@ -276,3 +275,9 @@ footer {
 
 /* Align both edges of paragraph text across the site. */
 main p { text-align: justify; }
+
+/* Navigation tabs stay clean; links in page content remain underlined. */
+.site-header nav a,
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] { text-decoration: none; }
+
