@@ -242,7 +242,7 @@ footer {
 .profile-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .profile-link-unavailable { color: var(--muted); }
 .team-section { max-width: 760px; margin-top: 36px; padding-bottom: 12px; }
-.team-section h2 { font-size: 1.2rem; font-weight: 500; color: var(--accent); margin-bottom: 20px; }
+.team-section h2 { font-size: 1.6rem; font-weight: 500; color: var(--accent); margin-bottom: 20px; }
 .team-section h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; }
 .team-section p { line-height: 1.85; margin: 0; }
 .people-list { list-style: none; margin: 0; padding: 0; }
@@ -256,11 +256,14 @@ footer {
   .mascot-photo { max-width: 280px; }
 }
 
-.pi-photo { float: left; width: 280px; max-width: 100%; height: auto; margin: 0 28px 18px 0; }
+.pi-intro { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 18px; }
+.pi-intro p { margin-bottom: 0; }
+.pi-photo { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; }
 .pi-profile::after { content: ""; display: block; clear: both; }
 .pi-profile #pi-contact { clear: both; padding-top: 8px; }
-@media (max-width: 620px) {
-  .pi-photo { float: none; width: 300px; margin: 0 0 24px; }
+@media (max-width: 700px) {
+  .pi-intro { grid-template-columns: 1fr; gap: 24px; }
+  .pi-photo { width: 300px; }
 }
 
 .research-main { max-width: 860px; padding-top: 52px; }
