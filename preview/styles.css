@@ -224,3 +224,13 @@ footer {
 .publication-authors { font-size: 0.95rem; color: var(--muted); }
 .publication-venue { font-size: 0.9rem; color: var(--muted); }
 .publication-type { display: inline-block; margin-left: 8px; color: var(--accent); font-size: 0.8rem; font-weight: 600; }
+
+/* Team profiles share the open layout and typography of the other pages. */
+.team-main { max-width: 860px; padding-top: 52px; }
+.team-heading { margin-bottom: 48px; }
+.team-heading h1 { color: #18354a; font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 500; }
+.pi-profile { max-width: 760px; padding-bottom: 40px; }
+.pi-profile h2 { color: var(--accent); font-size: 1.05rem; font-weight: 500; margin-bottom: 12px; }
+.pi-profile h3 { font-size: 1.5rem; font-weight: 500; margin-bottom: 20px; }
+.pi-profile p { line-height: 1.85; margin: 0 0 18px; overflow-wrap: anywhere; }
+.pi-profile a { text-decoration: underline; text-underline-offset: 3px; }
