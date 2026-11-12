@@ -29,7 +29,7 @@ jobs:
       - name: Prepare static website
         run: |
           mkdir -p _site
-          cp index.html research.html team.html publications.html styles.css monk_seal_cartoon.jpg publications-data.json _site/
+          cp index.html research.html team.html publications.html styles.css monk_seal_cartoon.jpg publications-data.json sitemap.xml robots.txt _site/
           cp -R assets _site/assets
           touch _site/.nojekyll
       - name: Upload website
